@@ -140,36 +140,49 @@ export default function Home() {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6">
             {[
               {
-                title: "공장 제품 불량 검사",
-                desc: "실시간 불량 판정 시스템. CNN과 YOLO 모델로 제품 결함 감지, PLC 연동.",
-                tags: ["CNN", "YOLO", "PLC", "Python"],
-                link: "projects/pj_fusebox",
-              },
-              {
-                title: "smolVLA + Pi0 로봇 구동",
-                desc: "smolVLA와 Pi0로 Dobot Magician 로봇 구동. 데이터 수집, 학습, 동작 테스트.",
-                tags: ["smolVLA", "Pi0", "Dobot", "Python", "Robotics"],
-                link: "projects/pj_dobot",
-              },
-              {
                 title: "여행자 스케줄 플래너 앱",
                 desc: "LLM과 연동해 맞춤형 일정, 관광지 추천, 여행 팁 제공 앱 개발. Next.js + OpenAI API 사용.",
                 tags: ["Next.js", "LLM", "OpenAI", "Travel App", "Web"],
+                date: "2025.11.10-2025.11.15",
                 link: "projects/pj_travel",
               },
+              {
+                title: "AI Vision 기반\n공정 자동화 시스템",
+                desc: "YOLOv5s 비전 검사와 PLC/협동로봇 제어를 연동한 End-to-End 공정 자동화 시스템. 실시간 불량 검출 및 자동 배출 구현.",
+                tags: ["YOLOv5", "PLC", "Robot", "Python", "Smart Factory"],
+                date: "2025.11.27-2025.12.23",
+                link: "projects/pj_fusebox",
+              },
+              {
+                title: "smolVLA + Pi0\n로봇 구동",
+                desc: "smolVLA와 Pi0로 Dobot Magician 로봇 구동. 데이터 수집, 학습, 동작 테스트.",
+                tags: ["smolVLA", "Pi0", "Dobot", "Python", "Robotics"],
+                date: "2026.01.23-2026.02.06",
+                link: "projects/pj_dobot",
+              },
             ].map((proj, idx) => (
-              <Link key={idx} href={proj.link} className="flex-1 relative flex flex-col justify-start bg-white min-h-[400px] p-6 md:p-8">
+              <Link key={idx} href={proj.link} className="flex-1 relative flex flex-col justify-start bg-white min-h-[400px] p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
                 {/* 상단 굵은 라인 (About 색) */}
-                <div className="w-full h-1 bg-[#93c5fd] mb-4"></div>
+                <div className="w-full h-1 bg-[#93c5fd] mb-3"></div>
+
+                {/* [추가됨] Project Number Label */}
+                <span className="text-[11px] font-bold text-[#60a5fa] tracking-wider uppercase mb-1">
+                  Project {idx + 1}
+                </span>
 
                 {/* 프로젝트 제목 */}
-                <h3 className="text-xl font-bold text-[#1e293b] mb-3">{proj.title}</h3>
+                <h3 className="text-xl font-bold text-[#1e293b] mb-3 whitespace-pre-line leading-tight">
+                  {proj.title}
+                </h3>
 
                 {/* 설명 */}
                 <p className="text-sm md:text-base text-[#334155] mb-auto">{proj.desc}</p>
 
+                {/* 날짜 */}
+                <p className="text-[13px] text-[#334155] mt-auto">{proj.date}</p>
+
                 {/* 스킬 바로 위 메모장 줄 */}
-                <div className="w-full border-b border-[#cbd5f5] mt-auto"></div>
+                <div className="w-full border-b border-[#cbd5f5] mt-4"></div>
 
                 {/* 스킬 태그 */}
                 <div className="flex flex-wrap gap-2 mt-4">
