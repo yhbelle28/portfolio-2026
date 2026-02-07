@@ -105,7 +105,7 @@ export default function PjFusebox() {
                  
                  {/* Header Info */}
                  <div>
-                    <h2 className="text-3xl font-bold mb-2 leading-tight">YOLOv5 기반 지능형 퓨즈 박스 검사</h2>
+                    <h2 className="text-3xl font-bold mb-2 leading-tight">YOLOv5 기반 퓨즈 박스 검사 자동화</h2>
                     <p className="text-[#64748b] font-medium mb-6">
                        Role: Computer Vision & System Integration (Main Developer)
                     </p>

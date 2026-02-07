@@ -140,15 +140,15 @@ export default function Home() {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-6">
             {[
               {
-                title: "여행자 스케줄 플래너 앱",
-                desc: "LLM과 연동해 맞춤형 일정, 관광지 추천, 여행 팁 제공 앱 개발. Next.js + OpenAI API 사용.",
-                tags: ["Next.js", "LLM", "OpenAI", "Travel App", "Web"],
+                title: "개인 맞춤형\nAI 여행 비서",
+                desc: "사용자의 위치(GPS)와 일정을 실시간으로 분석하여 묻기 전에 필요한 현지 문화 및 안전 정보를 제공하는 선제적(Proactive) 가이드 서비스. n8n과 RAGFlow를 연동한 AI 워크플로우를 기반으로 Appsmith를 활용해 빠르게 MVP를 구축.",
+                tags: ["n8n", "Prompt Engineering", "Prototyping"],
                 date: "2025.11.10-2025.11.15",
                 link: "projects/pj_travel",
               },
               {
                 title: "AI Vision 기반\n공정 자동화 시스템",
-                desc: "YOLOv5s 비전 검사와 PLC/협동로봇 제어를 연동한 End-to-End 공정 자동화 시스템. 실시간 불량 검출 및 자동 배출 구현.",
+                desc: "YOLOv5s 모델을 활용한 고속 비전 검사와 PLC 및 협동로봇 제어를 결합한 공정 자동화 시스템. 딥러닝 기반의 객체 인식 기술을 생산 라인에 직결하여, 실시간 불량 검출부터 자동 배출(Sorting)까지 모든 과정을 지연 없이 처리하는 End-to-End 솔루션을 구현.",
                 tags: ["YOLOv5", "PLC", "Robot", "Python", "Smart Factory"],
                 date: "2025.11.27-2025.12.23",
                 link: "projects/pj_fusebox",
@@ -176,7 +176,7 @@ export default function Home() {
                 </h3>
 
                 {/* 설명 */}
-                <p className="text-sm md:text-base text-[#334155] mb-auto">{proj.desc}</p>
+                <p className="text-sm md:text-base text-[#334155] mb-6">{proj.desc}</p>
 
                 {/* 날짜 */}
                 <p className="text-[13px] text-[#334155] mt-auto">{proj.date}</p>
