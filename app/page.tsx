@@ -100,13 +100,13 @@ export default function Home() {
           {/* About + Skills 오버레이 */}
           <div className="absolute bottom-10 md:bottom-16 left-0 w-full flex justify-start">
             <div className="max-w-5xl mx-auto px-4 flex justify-start w-full">
-              <div className="bg-white/20 backdrop-blur-md p-8 md:p-12 max-w-xl xl shadow-xl flex flex-col gap-6">
+              <div className="bg-white/20 backdrop-blur-md p-8 md:p-12 max-w-xl rounded-xl shadow-xl flex flex-col gap-6 border border-white/10">
                 {/* About */}
                 <div>
                   <h2 className="text-2xl font-semibold mb-2 text-[#93c5fd]">About</h2>
                   <p className="text-sm md:text-base text-[#e5e7eb] leading-relaxed">
-                    컴퓨터 비전, 딥러닝, 로봇 제어를 중심으로 실제 환경에서
-                    동작하는 AI 시스템 구현에 관심이 많습니다.
+                    실제 환경에서 동작하는 <strong>AI 모델링 및 최적화</strong>를 주력으로,
+                    Pi-0 기반 로봇 제어부터 YOLO 공정 자동화까지, 데이터로 하드웨어의 한계를 극복하는 견고한 시스템을 설계하는 개발자입니다.
                   </p>
                 </div>
 
@@ -114,11 +114,11 @@ export default function Home() {
                 <div id="skills">
                   <h2 className="text-2xl font-semibold mb-2 text-[#93c5fd]">Skills</h2>
                   <div className="flex flex-wrap gap-x-3 gap-y-2">
-                    {["Python", "PyTorch", "OpenCV", "YOLO", "Lerobot"].map(
+                    {["Python", "PyTorch", "Computer Vision", "YOLO", "LeRobot"].map(
                       (skill) => (
                         <span
                           key={skill}
-                          className="text-xs md:text-sm text-[#e5e7eb] font-small hover:text-[#2563eb] transition"
+                          className="text-xs md:text-sm text-[#e5e7eb] font-medium hover:text-[#93c5fd] transition cursor-default"
                         >
                           #{skill}
                         </span>
@@ -154,7 +154,7 @@ export default function Home() {
                 link: "projects/pj_fusebox",
               },
               {
-                title: "smolVLA + Pi0기반\n비대면 로봇 배달 시스템",
+                title: "Pi0 기반\n비대면 로봇 배달 시스템",
                 desc: "고위험 격리 병동 내 의료진의 감염 위험을 최소화하기 위한 음성 인식 기반 로봇 자동 배달 솔루션. 환자의 자연어 명령(\"목말라\")을 LLM으로 분석하고, 비전 모델(Pi-0)을 통해 로봇 팔이 물품을 직접 파지하여 전달하는 전체 파이프라인을 구축.",
                 tags: ["Python", "LeRobot", "PyTorch", "Gemma3(LLM)", "FastAPI", "Ubuntu"],
                 date: "2026.01.23-2026.02.06",
