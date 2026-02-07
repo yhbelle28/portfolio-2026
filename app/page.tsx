@@ -154,9 +154,9 @@ export default function Home() {
                 link: "projects/pj_fusebox",
               },
               {
-                title: "smolVLA + Pi0\n로봇 구동",
-                desc: "smolVLA와 Pi0로 Dobot Magician 로봇 구동. 데이터 수집, 학습, 동작 테스트.",
-                tags: ["smolVLA", "Pi0", "Dobot", "Python", "Robotics"],
+                title: "smolVLA + Pi0기반\n비대면 로봇 배달 시스템",
+                desc: "고위험 격리 병동 내 의료진의 감염 위험을 최소화하기 위한 음성 인식 기반 로봇 자동 배달 솔루션. 환자의 자연어 명령(\"목말라\")을 LLM으로 분석하고, 비전 모델(Pi-0)을 통해 로봇 팔이 물품을 직접 파지하여 전달하는 전체 파이프라인을 구축.",
+                tags: ["Python", "LeRobot", "PyTorch", "Gemma3(LLM)", "FastAPI", "Ubuntu"],
                 date: "2026.01.23-2026.02.06",
                 link: "projects/pj_dobot",
               },
@@ -176,7 +176,7 @@ export default function Home() {
                 </h3>
 
                 {/* 설명 */}
-                <p className="text-sm md:text-base text-[#334155] mb-6">{proj.desc}</p>
+                <p className="text-sm md:text-base text-[#334155] mb-8">{proj.desc}</p>
 
                 {/* 날짜 */}
                 <p className="text-[13px] text-[#334155] mt-auto">{proj.date}</p>

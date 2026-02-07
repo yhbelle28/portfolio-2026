@@ -86,10 +86,10 @@ export default function PjBarrierFree() {
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               
               {/* [Left Column] Image Area */}
-              <div className="w-full lg:w-[400px] shrink-0 lg lg:top-24">
+              <div className="w-full lg:w-[400px] sticky shrink-0 lg lg:top-24">
                  <div className="w-full bg-white -xl shadow-lg border border-gray-100 p-2">
                     <Image
-                       src="/pj_barrier_process.png" // 시스템 구성도 이미지 경로
+                       src="/pj_dobot_img2.png"
                        alt="Barrier-Free System Architecture"
                        width={800} 
                        height={2500}
@@ -193,11 +193,11 @@ export default function PjBarrierFree() {
                   </div>
                   <div className="mt-2">
                     <h4 className="font-bold text-[#1e293b] mb-3 flex items-center gap-2 text-base">
-                        Logic Flowchart (로봇 구동 로직)
+                        실제 로봇 구동 시연 영상
                     </h4>
                     <div className="w-full bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
                         <Image
-                            src="/pj_barrier_logic.png"  // 로직 이미지 경로
+                            src="/pj_dobot_gif1.gif"  // 로직 이미지 경로
                             alt="Robot Inference Logic"
                             width={1200}
                             height={800}
