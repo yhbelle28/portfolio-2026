@@ -63,7 +63,7 @@ export default function PjBarrierFree() {
           <div className="relative z-10 max-w-5xl mx-auto h-full px-6 flex items-center justify-end">
             <div className="max-w-2xl text-right">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-white leading-tight mb-3 drop-shadow-lg">
-                <span className="block text-[#e5e7eb]">Barrier-Free Project</span>
+                <span className="block text-[#e5e7eb]">Project</span>
                 <span className="block text-[#93c5fd]">
                   Pi0 기반<br />비대면 로봇 배달 시스템
                 </span>
@@ -86,7 +86,7 @@ export default function PjBarrierFree() {
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               
               {/* [Left Column] Image Area */}
-              <div className="w-full lg:w-[550px] sticky shrink-0 lg lg:top-24">
+              <div className="w-full lg:w-[550px] shrink-0 lg lg:top-24">
                  <div className="w-full bg-white -xl shadow-lg border border-gray-100 p-2">
                     <Image
                        src="/pj_dobot_img2.png"
